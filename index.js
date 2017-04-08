@@ -1,22 +1,5 @@
-var fs = require('fs');
-var http = require('http');
+var circle = require('./circle');
 
-var server = http.createServer(function(req, res){
-	//print out server requests
-	console.log(req.url);
-	fs.readFile('text.txt', function(err,data){
+var area = circle.area(24);
 
-		if (err) {
-			console.log ("Something went very very wrong." , err);
-			res.writeHead(200,{'Content-Type': 'text/plain'});
-			res.end('something went wrong' + err);
-		} else {
-			res.writeHead(200,{'Content-Type': 'text/HTML'});
-			res.end(data.toString());
-
-		}
-	});
-});
-
-console.log("Server running on localhost port 5000");
-server.listen(5000, '127.0.0.1');
+console.log("A circle with a radius of 24 has an area of " + area);

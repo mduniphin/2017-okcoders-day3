@@ -7,5 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maxx Duniphin",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mduniphin/2017-okcoders-week3.git"
+  },
+  "keywords": [
+    "okcoders"
+  ],
+  "bugs": {
+    "url": "https://github.com/mduniphin/2017-okcoders-week3/issues"
+  },
+  "homepage": "https://github.com/mduniphin/2017-okcoders-week3#readme"
 }
