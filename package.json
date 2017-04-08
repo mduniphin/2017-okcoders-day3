@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mduniphin/2017-okcoders-week3/issues"
   },
-  "homepage": "https://github.com/mduniphin/2017-okcoders-week3#readme"
+  "homepage": "https://github.com/mduniphin/2017-okcoders-week3#readme",
+  "dependencies": {
+    "mongodb": "^2.2.25"
+  }
 }

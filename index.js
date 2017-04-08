@@ -1,5 +1,16 @@
-var circle = require('./circle');
+var mongo = require('mongodb');
+var mc = mongo.MongoClient;
 
-var area = circle.area(24);
+var url = 'mongodb://localhost:27017/testing';
 
-console.log("A circle with a radius of 24 has an area of " + area);
+mc.connect(url, function(err, db){
+
+	if(err){
+		console.log("unable to access database on " + url);
+	}
+	var posts = db.collection('posts');
+	posts.find({}).toArray(function(err,docs){
+		console.log(docs);
+		db.close();
+	});
+});
