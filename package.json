@@ -1,0 +1,11 @@
+{
+  "name": "2017-okcoders-week-3",
+  "version": "0.0.1",
+  "description": "Week 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxx Duniphin",
+  "license": "ISC"
+}
